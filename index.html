@@ -3,163 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investasi Usaha - Crowdfunding Modal Kecil</title>
+    <title>InvestUsaha — Platform Investasi Gotong Royong</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>InvestUsaha</h1>
-            </div>
-            <nav class="nav">
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">InvestUsaha</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="#tentang">Tentang</a></li>
-                    <li><a href="#keunggulan">Keunggulan</a></li>
-                    <li><a href="#daftar-investasi">Daftar Investasi</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#advantages">Keunggulan</a></li>
+                    <li><a href="#investments">Daftar Investasi</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Hubungi Kami</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="https://wa.me/6285220089789" class="btn-primary">Hubungi Kami</a>
-                <a href="#signup" class="btn-secondary">Daftar</a>
+                <a href="https://wa.me/6285220089789" class="btn btn-primary">Hubungi Kami</a>
+                <a href="#signup" class="btn btn-outline">Daftar</a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ========== HERO ========== -->
     <section class="hero">
-        <div class="container">
-            <h1>Investasi Gotong Royong</h1>
-            <p>Investasi bisnis bersama di aset properti dan dapatkan keuntungan secara berkala. Modal kecil yang terjangkau untuk masyarakat luas.</p>
-            <a href="#signup" class="btn-hero">Investasi Sekarang</a>
-            <div class="app-links">
-                <a href="#"><img src="https://via.placeholder.com/120x40?text=Google+Play" alt="Google Play"></a>
-                <a href="#"><img src="https://via.placeholder.com/120x40?text=App+Store" alt="App Store"></a>
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">Platform Investasi Resmi</span>
+            <h1 class="hero-title">Investasi Gotong<br>Royong</h1>
+            <p class="hero-subtitle">
+                Investasi bisnis bersama di aset properti dan dapatkan keuntungan secara berkala.
+                Modal kecil yang terjangkau untuk masyarakat luas.
+            </p>
+            <div class="hero-actions">
+                <a href="#signup" class="btn btn-gold">Mulai Investasi</a>
+                <a href="#about" class="btn btn-ghost">Pelajari Lebih Lanjut</a>
             </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="tentang" class="section tentang">
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2>Apa itu InvestUsaha?</h2>
-            <p>InvestUsaha adalah platform crowdfunding yang memungkinkan Anda berinvestasi dalam usaha-usaha mikro dan kecil dengan modal mulai dari 1 juta rupiah. Kami menghubungkan investor dengan pengusaha yang membutuhkan dana untuk ekspansi, sehingga kedua belah pihak dapat mendapatkan manfaat bersama.</p>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0" title="InvestUsaha Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="section-header">
+                <span class="section-tag">Tentang Kami</span>
+                <h2 class="section-title">Apa itu InvestUsaha?</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section id="keunggulan" class="section advantages">
-        <div class="container">
-            <h2>Keunggulan Investasi di InvestUsaha</h2>
-            <div class="advantage-cards">
-                <div class="card">
-                    <div class="icon">💰</div>
-                    <h3>Menguntungkan</h3>
-                    <p>Dapatkan imbal hasil secara berkala dari investasi yang Anda pilih.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        InvestUsaha adalah platform <em>crowdfunding</em> terpercaya yang menghubungkan
+                        investor dengan pelaku usaha yang membutuhkan modal untuk ekspansi. Kami membuka
+                        peluang bagi masyarakat luas untuk berinvestasi dalam proyek-proyek nyata dengan
+                        modal yang terjangkau dan imbal hasil yang kompetitif.
+                    </p>
+                    <p>
+                        Setiap investasi yang Anda alokasikan didukung oleh aset riil dan diawasi secara
+                        ketat. Kami berkomitmen memberikan transparansi penuh serta pengalaman investasi
+                        yang aman, mudah, dan menguntungkan.
+                    </p>
+                    <ul class="check-list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Diawasi oleh Otoritas Jasa Keuangan
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Investasi dimulai dari Rp1.000.000
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Imbal hasil berkala dan transparan
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Pendapatan dapat ditarik kapan saja
+                        </li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <div class="icon">🔒</div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">IDR 2.4T+</div>
+                        <div class="stat-label">Total Modal Terkumpul</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12.800+</div>
+                        <div class="stat-label">Investor Aktif</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-label">Proyek Tercapai</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ADVANTAGES ========== -->
+    <section id="advantages" class="section advantages-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Mengapa Kami</span>
+                <h2 class="section-title">Keunggulan Investasi di InvestUsaha</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon advantage-icon-gold">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    </div>
+                    <h3>Imbal Hasil Kompetitif</h3>
+                    <p>Dapatkan returns yang kompetitif dan ditransfer secara berkala ke rekening Anda.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon advantage-icon-silver">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 3v18"/></svg>
+                    </div>
                     <h3>Aset Likuid</h3>
-                    <p>Investasi yang dapat Anda jual kembali di pasar sekunder kami.</p>
+                    <p>Investasi Anda dapat dijual kembali di pasar sekunder kami kapan saja.</p>
                 </div>
-                <div class="card">
-                    <div class="icon">🪙</div>
-                    <h3>Modal Kecil</h3>
-                    <p>Mulai berinvestasi hanya dengan Rp1.000.000.</p>
+                <div class="advantage-card">
+                    <div class="advantage-icon advantage-icon-dark">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Modal Terjangkau</h3>
+                    <p>Mulai berinvestasi hanya dengan Rp1.000.000 — terjangkau untuk semua kalangan.</p>
                 </div>
-                <div class="card">
-                    <div class="icon">📉</div>
-                    <h3>Biaya Rendah</h3>
-                    <p>Tidak ada biaya administrasi yang membebani.</p>
+                <div class="advantage-card">
+                    <div class="advantage-icon advantage-icon-gold">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L2 9h7z"/></svg>
+                    </div>
+                    <h3>Biaya Transparan</h3>
+                    <p>Tanpa biaya tersembunyi. Biaya admin yang jelas dan wajar sejak awal.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Investment List Section -->
-    <section id="daftar-investasi" class="section investments">
+    <!-- ========== INVESTMENTS ========== -->
+    <section id="investments" class="section investments-section">
         <div class="container">
-            <h2>Daftar Investasi Terkini</h2>
-            <div class="investment-slider">
-                <!-- Placeholder slides -->
-                <div class="slide">
-                    <h3>Proyek Usaha A</h3>
-                    <p>Telah terkumpul 80% dari target Rp500.000.000</p>
-                    <p>Imbal Hasil: 12% - 18% per tahun</p>
-                    <a href="#" class="btn-detail">Lihat Detail</a>
-                </div>
-                <div class="slide">
-                    <h3>Proyek Usaha B</h3>
-                    <p>Telah terkumpul 65% dari target Rp750.000.000</p>
-                    <p>Imbal Hasil: 10% - 15% per tahun</p>
-                    <a href="#" class="btn-detail">Lihat Detail</a>
-                </div>
-                <div class="slide">
-                    <h3>Proyek Usaha C</h3>
-                    <p>Telah terkumpul 90% dari target Rp1.000.000.000</p>
-                    <p>Imbal Hasil: 15% - 22% per tahun</p>
-                    <a href="#" class="btn-detail">Lihat Detail</a>
-                </div>
+            <div class="section-header center">
+                <span class="section-tag">Pilihan Terkini</span>
+                <h2 class="section-title">Daftar Investasi</h2>
             </div>
-            <div class="slider-nav">
-                <button class="nav-btn prev">&#9664; Prev</button>
-                <button class="nav-btn next">Next &#9654;</button>
+            <div class="investments-grid" id="investmentsGrid">
+                <!-- Di-render oleh JavaScript -->
             </div>
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="slider-controls" id="sliderControls" style="display:none;">
+                <button class="slider-btn slider-prev" id="prevSlide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn slider-next" id="nextSlide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action (Subscribe) -->
-    <section id="signup" class="section cta">
+    <!-- ========== CTA / SIGNUP ========== -->
+    <section id="signup" class="section cta-section">
         <div class="container">
-            <h2>Jangan lewatkan kesempatan berikutnya untuk berinvestasi.</h2>
-            <form id="subscribeForm">
-                <input type="email" placeholder="yourname@gmail.com" required>
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="cta-inner">
+                <div class="cta-text">
+                    <span class="section-tag" style="color: var(--gold-deep);">Bergabung Sekarang</span>
+                    <h2 class="cta-title">Jangan Lewatkan<br>Kesempatan Berikutnya</h2>
+                    <p class="cta-subtitle">
+                        Daftarkan email Anda untuk mendapatkan info investasi terdepan dan penawaran eksklusif.
+                    </p>
+                </div>
+                <form id="subscribeForm" class="cta-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Masukkan email Anda" required>
+                        <button type="submit">Daftar</button>
+                    </div>
+                    <p class="form-disclaimer">Kami tidak akan membagikan email Anda kepada pihak manapun.</p>
+                </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- ========== CONTACT / BANK ========== -->
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <div class="footer-top">
-                <div class="footer-section">
-                    <h3>Temukan Kami di</h3>
-                    <ul class="social">
-                        <li><a href="https://t.me/investusaha">Telegram</a></li>
-                        <li><a href="https://wa.me/6285220089789">WhatsApp</a></li>
-                        <li><a href="https://instagram.com/investusaha">Instagram</a></li>
-                        <li><a href="https://youtube.com/investusaha">YouTube</a></li>
-                    </ul>
+            <div class="section-header center">
+                <span class="section-tag">Hubungi Kami</span>
+                <h2 class="section-title">Kontak & Pembayaran</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <p class="contact-label">WhatsApp</p>
+                            <a href="https://wa.me/6285220089789" class="contact-value">+62 852-2008-9789</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:support@investusaha.id" class="contact-value">support@investusaha.id</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Produk</h3>
+                <div class="bank-info">
+                    <p class="bank-title">Pembayaran melalui rekening bank berikut:</p>
+                    <div class="bank-cards">
+                        <div class="bank-card">
+                            <div class="bank-icon">
+                                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="8" fill="#003d7c"/>
+                                    <text x="20" y="27" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="bold" font-size="16">BCA</text>
+                                </svg>
+                            </div>
+                            <div class="bank-details">
+                                <p class="bank-name">Bank Central Asia (BCA)</p>
+                                <p class="bank-number"><strong>873-5980-188</strong></p>
+                                <p class="bank-at">Atas nama: InvestUsaha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <span class="logo-icon"></span>
+                    <span class="logo-text">InvestUsaha</span>
+                </a>
+                <p class="footer-tagline">Investasi gotong royong untuk kemajuan bersama.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Platform</h4>
                     <ul>
-                        <li><a href="#daftar-investasi">Daftar Investasi</a></li>
-                        <li><a href="#tentang">Tentang Kami</a></li>
-                        <li><a href="#keunggulan">Keunggulan</a></li>
+                        <li><a href="#investments">Daftar Investasi</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#advantages">Keunggulan</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Perusahaan</h3>
+                <div class="footer-col">
+                    <h4>Bantuan</h4>
                     <ul>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Tim Kami</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Legal</h3>
+                <div class="footer-col">
+                    <h4>Legal</h4>
                     <ul>
                         <li><a href="#">Syarat & Ketentuan</a></li>
                         <li><a href="#">Kebijakan Privasi</a></li>
